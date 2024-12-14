@@ -1,0 +1,28 @@
+/* Media Query */
+/* for Desktop: 801px ~ */
+
+/* for smartphone: ~ 480px */
+/*
+Media Query는 기술 순서에 의미가 있다.
+만일 스마트폰용 스타일을 태블릿용 스타일보다 먼저 기술하면 최종적으로 태블릿용 스타일이 적용된다.
+Non Mobile First Method의 경우, max-width의 값이 큰 것부터 기술하여 한다.
+*/
+@media screen and (max-width: 480px) {
+
+}
+
+/* for tablet: ~ 800px */
+@media screen and (max-width: 800px) {
+    header {
+        height: 60px;
+        text-align: center;
+      }
+      #wrap {
+        /* margin-top = header height */
+        margin-top: 60px;
+      }
+      aside {
+        top: 60px;
+      }
+
+}

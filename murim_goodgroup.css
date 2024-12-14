@@ -1,11 +1,13 @@
-article:nth-of-type(2) {
+#named_goodgroup {
     float: left;
     margin-top: 0;
-    width: 180px;
+    top: 150px;
+    bottom: 0;
+    width: 200px;
+    position: fixed;
+    overflow: auto;
 }
-article:nth-of-type(3) {    
-    float: left;
-    margin-left: 0;
+#named_goodgroup_article {    
+    margin-left: 220px;
     margin-top: 0;
-    width: 85.3%;
 }

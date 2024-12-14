@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 #wrap {
   width: 100%;
@@ -53,6 +54,7 @@ aside {
   padding-top: 25px;
   background-color: #333;
   z-index: 100;
+  overflow: auto;
 }
 /* aside navigation */
 /**/
@@ -105,11 +107,7 @@ section {
   padding-left: 200px;
 }
 article {
-  margin: 1%;
+  margin: 10px;
   padding: 25px;
   background-color: white;
-  float: left;
-}
-article:nth-of-type(1) {
-  width: 98%;
 }
