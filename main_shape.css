@@ -1,0 +1,115 @@
+/* Simple Reset CSS */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #58666e;
+  background-color: #f0f3f4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjus: 100%;  /* iphone font size 변경 방지 */
+}
+a {
+  text-decoration: none;
+}
+#wrap {
+  width: 100%;
+  /* margin-top = header height */
+  margin-top: 60px;
+}
+
+ /* Navigation bar */
+ header {
+  /* for sticky header */
+  position: fixed;/* fixed 프로퍼티 부모요소와 관계없이 브라우저의  viewport를 기준으로 좌표 프로퍼티(top, bottom, left, right).dmf tkdydgkdu dnlclfmf dlehd*/
+  top: 00;
+
+  font-size: 2em;
+  font-style: italic;
+  padding: 10px;
+
+  width: 100%;
+  height: 60px;
+  z-index: 2000; /* 뭔놈인가? */
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05); /* 박스 그림자? 뭔놈임? */
+}
+
+  /* clearfix */
+#content-wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+  
+}
+
+aside {
+  /* for fixed side bar */
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 200px;  /* 너비 고정 */
+  padding-top: 25px;
+  background-color: #333;
+  z-index: 100;
+}
+/* aside navigation */
+/**/
+aside > ol {
+  width: 220px;
+  padding:  20px;
+}
+
+aside > ol > li::marker {
+  color: #fff;
+}
+aside > ol > li > a {
+  color: #fff;
+}
+aside > ol > li > ul > a > li {
+  list-style-type: none;
+  background-color: #333;
+  padding: 5px;
+  width: 200px;
+}
+
+aside > ol > li > ul > a> li  {
+  color: #fff;
+}
+
+/* aside menu slideDown */
+.menu-1{
+  line-height:2;
+  position:relative;
+}
+.menu-1 .submenu{
+  position:absolute;
+  width: 200px;
+  left: 180px;
+  top:-1px;
+  display:none;
+}
+.menu-1:hover{
+  background-color:#4CAF50;
+}
+.menu-1 .submenu> a > li:hover{
+  background-color:#4CAF50;
+}
+
+/* Section */
+section {
+  float: left;
+  width: 100%;  
+  /* aside width */
+  padding-left: 200px;
+}
+article {
+  margin: 1%;
+  padding: 25px;
+  background-color: white;
+  float: left;
+}
+article:nth-of-type(1) {
+  width: 98%;
+}
